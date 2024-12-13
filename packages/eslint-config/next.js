@@ -7,7 +7,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     require.resolve("@vercel/style-guide/eslint/next"),
-    "turbo",
+    "eslint-config-turbo",
   ],
   globals: {
     React: true,

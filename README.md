@@ -1,13 +1,13 @@
 # Turborepo starter with shadcn/ui
 
-![Static Badge](https://img.shields.io/badge/shadcn%2Fui-2.1.2-blue?link=https%3A%2F%2Fgithub.com%2Fshadcn%2Fui)
+![Static Badge](https://img.shields.io/badge/shadcn-2.1.2-blue?link=https%3A%2F%2Fgithub.com%2Fshadcn%2Fui)
 
 This is Turborepo starter with shadcn/ui pre-configured.
 
 > [!NOTE]
-> This example uses `pnpm` as package manager.
+> This example uses `npm` as package manager.
 
-[npm version](https://github.com/dan5py/turborepo-shadcn-ui/tree/npm)
+[pnpm version](https://github.com/dan5py/turborepo-shadcn-ui)
 [bun version](https://github.com/dan5py/turborepo-shadcn-ui/tree/bun)
 
 ## Using this example
@@ -15,14 +15,14 @@ This is Turborepo starter with shadcn/ui pre-configured.
 Clone the repository:
 
 ```sh
-git clone https://github.com/dan5py/turborepo-shadcn-ui.git
+git clone https://github.com/dan5py/turborepo-shadcn-ui.git --branch npm
 ```
 
 Install dependencies:
 
 ```sh
 cd turborepo-shadcn-ui
-pnpm install
+npm install
 ```
 
 ### Add ui components
@@ -30,7 +30,7 @@ pnpm install
 Use the pre-made script:
 
 ```sh
-pnpm ui add <component-name>
+npm ui add <component-name> -- <options>
 ```
 
 > This works just like the `shadcn/ui` CLI.
@@ -40,7 +40,7 @@ pnpm ui add <component-name>
 Turborepo offer a simple command to add a new app:
 
 ```sh
-pnpm turbo gen workspace --name <app-name>
+npx turbo gen workspace --name <app-name>
 ```
 
 This will create a new empty app in the `apps` directory.
@@ -48,11 +48,11 @@ This will create a new empty app in the `apps` directory.
 If you want, you can copy an existing app with:
 
 ```sh
-pnpm turbo gen workspace --name <app-name> --copy
+npx turbo gen workspace --name <app-name> --copy
 ```
 
 > [!NOTE]
-> Remember to run `pnpm install` after copying an app.
+> Remember to run `npm install` after copying an app.
 
 ## What's inside?
 
@@ -81,7 +81,7 @@ To build all apps and packages, run the following command:
 
 ```sh
 cd turborepo-shadcn-ui
-pnpm build
+npm run build
 ```
 
 ### Develop
@@ -90,7 +90,7 @@ To develop all apps and packages, run the following command:
 
 ```sh
 cd turborepo-shadcn-ui
-pnpm dev
+npm run dev
 ```
 
 ### Remote Caching
